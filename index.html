@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Targeting Business Visibility Metrics</title>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="./js/jquery-1.7.1.min.js"></script> 
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="./js/jquery.hashchange.min.js"></script> 
+    <script src="./js/jquery.tbvm.js"></script>
+    <script src="./js/bootstrap.datepicker.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1', {packages: ['corechart', 'table']});
+        
+    </script>    
+    
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrapdocs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/nv.d3.css">
+    <link rel="stylesheet" href="./css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/ColVis.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/k2.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+    <link rel="stylesheet" href="./css/tbvm.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="yui3-skin-k2">
+    <header id="topNavBar" class="navbar navbar-inverse navbar-fixed-top top-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a href="index.html" class="navbar-brand">Home</a>-->
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dimensions<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="dp-event">
+              </ul>
+            </li>
+
+            <li class="dropdown" >
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Campaign<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="dp-campaign">
+              </ul>
+            </li>
+          </ul> 
+        </nav> 
+      </div>
+    </header>
+
+<div class="main_container"> 
+      <div align="center">
+        <span id="title" class="view-title"></span>
+      <div>
+      <div class="row">
+        <div class="col-lg-14" id="page-content">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel">
+              <div class="panel-heading">
+                <span id="segd-title" class="view-title">Mobile Click </span>
+              </div>
+              <div class="panel-body">
+                <div id="m_c"></div>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+            
+<div class="panel">
+              <div class="panel-heading">
+                <span id="impd-title" class="view-title">Mobile and PC: Click</span>
+              </div>
+              <div class="panel-body">
+                <div id="a_c"></div>
+              </div>
+          </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel">
+              <div class="panel-heading">
+                <span id="impd-title" class="view-title">Mobile View</span>
+              </div>
+              <div class="panel-body">
+                <div id="m_v"></div>
+              </div>
+          </div>
+            </div>
+
+            <div class="col-lg-6">
+               <div class="panel">
+              <div class="panel-heading">
+                <span id="impd-title" class="view-title">Mobile and PC: View</span>
+              </div>
+              <div class="panel-body">
+                <div id="a_v"></div>
+              </div>
+          </div>
+            </div>
+          </div>
+          
+        </div>      
+      </div>
+    </div>
+    <script>
+        $.init();
+    </script>
+  </body>
+</html>
+
